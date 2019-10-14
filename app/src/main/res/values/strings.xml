@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Learn C</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="desc">C is a procedural programming language. It was initially developed by Dennis Ritchie between 1969 and 1973.
+        It was mainly developed as a system programming language to write operating system. … Like syntax of Java, PHP, JavaScript and many other languages is mainly based on C language.</string>
+    <string name="player_error">Error initializing Youtube Player: %s</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
+    <string name="c_in_out">As we all know the three essential functions of a computer are reading,
+        processing and writing data.
+        Majority of the programs take data as input,and then after processing the processed data is being displayed which is called information.
+    In C programming you can use</string>
+    <string name="c_install">As we all know the three essential functions of a computer are reading, processing and writing data. Majority of the programs take data as input,
+    and then after processing the processed data is being displayed which is called information.
+    In C programming you can use</string>
+    <string name="c_struct">A C program involves the following sections:</string>
+    <string name="fromat_specifier">Format specifiers can be defined as the operators which are used in association with printf() function for printing the data that is referred by any object or any variable.
+        When a value is stored in a particular variable, then you cannot print the value stored in the variable straightforwardly without using the format specifiers.
+        You can retrieve the data that are stored in the variables and can print them onto the console screen by implementing these format specifiers in a printf() function.
+    Format specifiers start with a percentage</string>
+    <string name="history_c"> programming
+        language was developed to overcome the difficulties found in older programming languages
+        such as BCPL, BASIC, B, etc.</string>
+    <string name="limitation">Difficult to debug.
+    C allows a lot of freedom in writing code, and that is why you can put an empty line or white space anywhere in the program.
+        And because there is no fixed place to start or end the line, so it is difficult to read and understand the program.
+    C compilers can only identify errors a</string>
+    <string name="first_slide_text">
+        If you think it is hard then just try to code in C.
+    </string>
+    <string name="scond_slide_text">
+        Learning C is the fundamental to All programming language and it is most
+        popular language to program  hardware.
+    </string>
+
+    <string name="third_slide_text">
+        The software like Windows,Google Applications,MySQL Server,Apple-OS X etc are written purely in c
+
+    </string>
+    <!-- ##########################################################################################################-->
+    <string name="prgm1">
+      Celsius to Farenhite
+  </string>
+
+    <string name="prgm2">
+        Convert To Celsius
+    </string>
+    <string name="prgm3">
+        convert To km
+    </string>
+    <string name="prgm4">
+        find Leap Year
+    </string>
+    <string name="prgm5">
+        larger Of Two
+    </string>
+    <string name="prgm6">
+        larger Of Two With Conditions
+    </string>
+    <string name="prgm7">
+        meter to feet
+    </string>
+    <string name="prgm8">
+        sum
+    </string>
+
+    <string name="prgm9">
+        swap
+    </string>
+    <string name="prgm10">
+        swap Two Numbers
+    </string>
+    <string name="pref_ad_removal_purchased">Item purchased</string>
+    <string name="item_Consumed">item Consumed</string>
+    <string name="key">
+    
+    </string>
+</resources>

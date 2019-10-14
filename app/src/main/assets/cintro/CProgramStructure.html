@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>C Program Structure</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <style type="text/css">
+		h1{
+	text-align: center;
+	text-decoration: underline; color: #FF4620;
+}
+
+.include{
+		color: #F92468
+	}
+
+	.conio{
+		color: #E7DB74
+	}
+	.comment{
+		color: #ffffff
+	}
+.kwd{
+	color: #889F26
+}
+.pln{
+	color: #60D8EF
+}
+
+.code {
+	width: auto;
+	height: auto;
+	background-color:#282923;
+	padding: 20px;
+	margin-left:10px;
+	border-radius: 10px;
+}
+
+.prettyprinted{
+	color:#ffffff;
+}
+.example{
+	margin-top: 20px;
+}
+ table, th, td {
+            border: 1px solid black;
+           width: auto;
+           height: auto;
+
+
+         }
+         th, td {
+  padding: 10px;
+
+}
+
+.crp-list-item {
+	list-style: circle;
+
+
+}
+	</style>
+
+</head>
+<body>
+
+<h1 style="text-align: center;"><strong>C Program Structure</strong></h1>
+<div class="card">
+    <div class="card-header">A C program involves the following sections:</div>
+    <div class="card-body">
+        <ul>
+            <li>Documentations&nbsp;(Documentation Section)</li>
+            <li>Preprocessor Statements&nbsp;(Link Section)</li>
+            <li>Global Declarations&nbsp;(Definition Section)</li>
+            <li>The main() function
+                <ul>
+                    <li>Local Declarations</li>
+                    <li>Program Statements &amp; Expressions</li>
+                </ul>
+            </li>
+            <li>User Defined Functions</li>
+        </ul>
+    </div>
+</div>
+<p>Let's begin with a simple C program code.</p>
+<h3>Sample Code of C "Hello World" Program.
+    The text between /* and */ symbol
+    is regarded as comment in c</h3>
+<div class="example">Example:</div>
+<div class="preOuter">
+
+    <div class="code">
+<pre><code class="prettyprint prettyprinted" data-file="c_default"><span class="comment">/*
+Date: 2018-04-28
+Description:
+Writes the words "Hello, World!" on the screen */</span>
+<span class="include">#include</span><span class="conio">&lt;stdio.h&gt;</span>
+
+<span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span>
+<span class="pun">{</span><span class="pln">
+    printf</span><span class="pun">(</span><span class="conio">"Hello, World!\n"</span><span class="pun">);</span>
+    <span class="kwd">return</span> <span class="lit">0</span><span class="pun">;</span>
+<span class="pun">}</span></code></pre>
+    </div>
+
+</div>
+<p>or in a different way</p>
+<div class="preOuter">
+    <div class="code">
+<pre><code class="prettyprint prettyprinted"><span class="comment">/*
+Date: 2013-11-15
+Description:
+Writes the words "Hello, World!" on the screen */</span>
+<span class="include">
+<span class="include">#include
+</span>
+</span><span class="conio">&lt;stdio.h&gt;</span>
+<span class="include">#include</span><span class="conio">&lt;conio.h&gt;</span>
+
+<span class="kwd">void</span><span class="pln"> main</span><span class="pun">()</span>
+<span class="pun">{</span><span class="pln">
+    printf</span><span class="pun">(</span><span class="conio">"Hello, World!\n"</span><span class="pun">);</span>
+    <span class="kwd">return</span><span class="pun">;</span>
+<span class="pun">}</span></code></pre>
+    </div>
+
+</div>
+<div class="example">Program Output:</div>
+<p><img class="alignnone size-full wp-image-2314" src="images/c_otpt.jpg" alt="C program" width="310" height="156" /></p>
+<p>The above example has been used to print&nbsp;<em>Hello, World!</em>&nbsp;Text on the screen.</p>
+<p>&nbsp;</p>
+<h2 style="text-align: center;"><strong>Let us Look Closer Into this</strong></h2>
+<table class="table">
+    <tbody>
+    <tr>
+        <td>/* Comments */</td>
+        <td>Comments are a way of explaining what makes a program. The compiler ignores comments and used by others to understand the code.
+            <p>or</p>
+            <p>This is a comment block, which is ignored by the compiler. Comment can be used anywhere in the program to add info about the program or code block, which will be helpful for developers to understand the existing code in the future easily.</p>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<table class="table">
+    <tbody>
+    <tr>
+        <td>#include&lt;stdio.h&gt;</td>
+        <td>stdio is standard for input/output, this allows us to use some commands which includes a file called stdio.h.
+            <p>or</p>
+            <p>This is a preprocessor command. That notifies the compiler to include the header file stdio.h in the program before compiling the source-code.</p>
+        </td>
+    </tr>
+    <tr>
+        <td>int/void main()</td>
+        <td>int/void is a return value, which will be explained in a while.</td>
+    </tr>
+    <tr>
+        <td>main()</td>
+        <td>The main() is the main function where program execution begins. Every C program must contain only one main function.
+            <p>or</p>
+            <p>This is the main function, which is the default entry point for every C program and the void in front of it indicates that it does not return a value.</p>
+        </td>
+    </tr>
+    <tr>
+        <td>Braces</td>
+        <td>Two curly brackets "{...}" are used to group all statements.
+            <p>or</p>
+            <p>Curly braces which shows how much the main() function has its scope.</p>
+        </td>
+    </tr>
+    <tr>
+        <td>printf()</td>
+        <td>It is a function in C, which prints text on the screen.
+            <p>or</p>
+            <p>This is another pre-defined function of C which is used to be displayed text string in the screen.</p>
+        </td>
+    </tr>
+    <tr>
+        <td>return 0</td>
+        <td>At the end of the main function returns value 0.</td>
+    </tr>
+    </tbody>
+</table>
+<h2>Basic Structure of&nbsp;C Program</h2>
+<p>The example discussed above illustrates how a simple C program looks like and how the program segment works. A C program may contain one or more sections which are figured above.</p>
+<p>The Documentation section usually contains the collection of comment lines giving the name of the program, author's or programmer's name and few other details. The second&nbsp;part is the link-section which instructs the compiler to connect to the various functions from the system library. The Definition section describes all the symbolic-constants. The global declaration section is used to define those variables that are used globally within the entire program and is used in more than one function. This section also declares all the user-defined functions. Then comes the main(). All C programs must have a main() which contains two parts:</p>
+<ul>
+    <li>Declaration part</li>
+    <li>Execution part</li>
+</ul>
+<p>The declaration part is used to declare all variables that will be used within the program. There needs to be at least one statement in the executable part, and these two parts are declared within the opening and closing curly braces of the main(). The execution of the program begins at the opening brace '{' and ends with the closing brace '}'. Also, it has to be noted that all the statements of these two parts need to be terminated with a semi-colon.</p>
+<p>The sub-program section deals with all user-defined functions that are called from the main(). These user-defined functions are declared and usually defined after the main() function.</p>
+<p>Here some Articles that you want to read</p>
+<p>&nbsp;</p>
+<ul>
+    <li class="crp-list-item crp-list-item-image-none">
+        <div class="crp-list-item-title"><a href="https://www.w3schools.in/c-tutorial/format-specifiers/" target="_blank" rel="noopener">C Format Specifiers</a></div>
+    </li>
+    <li class="crp-list-item crp-list-item-image-none">
+        <div class="crp-list-item-title"><a href="https://www.w3schools.in/c-program/print-a-semicolon-without-using-a-semicolon/" target="_blank" rel="noopener">C Program to Print a Semicolon Without Using a Semicolon</a></div>
+    </li>
+    <li class="crp-list-item crp-list-item-image-none">
+        <div class="crp-list-item-title"><a href="https://www.w3schools.in/c-program/print-integer/" target="_blank" rel="noopener">C Program to Print Integer</a></div>
+    </li>
+    <li class="crp-list-item crp-list-item-image-none">
+        <div class="crp-list-item-title"><a href="https://www.w3schools.in/c-program/print-string/" target="_blank" rel="noopener">C Program to Print String</a></div>
+    </li>
+</ul>
+<p>&nbsp;</p>
+
+</body>
+</html>
+
+
+

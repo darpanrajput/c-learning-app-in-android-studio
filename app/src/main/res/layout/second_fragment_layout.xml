@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="10dp"
+        android:layout_centerHorizontal="true"
+        >
+        <RelativeLayout
+            android:id="@+id/realtiveLayout"
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/img"
+                android:transitionName="img"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:scaleType="fitCenter"
+                tools:ignore="UnusedAttribute"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/perl_logo"/>
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/shadow_bottom"
+                android:src="@drawable/bottom_shadow"
+                android:layout_alignBottom="@id/img"
+                android:layout_width="180dp"
+                android:layout_height="80dp" />
+
+            <ProgressBar
+                android:id="@+id/prograss_load_photo"
+                style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Small"
+                android:layout_marginTop="70dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:text="Author"
+                android:layout_alignLeft="@+id/shadow_bottom"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/img"
+                android:layout_marginTop="-50dp"
+
+                />
+
+            <FrameLayout
+
+                android:id="@+id/layoutDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img"
+                android:background="@drawable/round_white"
+                android:padding="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="-50dp">
+
+                <ImageView
+                    android:id="@+id/lock"
+                    android:src="@drawable/ic_lock_black_24dp"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" />
+
+
+            </FrameLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
+                android:textColor="@color/colorTextTitle"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="perl intro"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/img"
+                android:id="@+id/title"
+                style="@style/TextAppearance.AppCompat.Body1"/>
+
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/desc"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="#000"
+                android:layout_marginBottom="10dp"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

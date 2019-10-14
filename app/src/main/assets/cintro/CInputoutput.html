@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>C Input/output(I/O)</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style type="text/css">
+
+		body{
+			background-color: #ffffff
+		}
+
+.include{
+		color: #F92468
+	}
+
+	.pun{
+		color: #E7DB74
+	}
+	.comment{
+		color: #ffffff
+	}
+.kwd{
+	color: #889F26
+}
+.pln{
+	color: #60D8EF
+}
+.str
+{
+	color: #D3B255
+}
+
+.lit{
+color: #AC80E8
+}
+#code1,#code2,#code3,#code4{
+	width: auto;
+	height: auto;
+	background-color:#282923;
+	padding: 20px;
+	margin-left:10px;
+	border-radius: 10px;
+}
+
+.prettyprinted{
+	color:#ffffff;
+}
+.example{
+	margin-top: 20px;
+}
+
+	</style>
+
+</head>
+<body>
+<strong><h1 style="text-align: center;">C Input/output(I/O)</h1></strong>
+
+<p>As we all know the three essential functions of a computer are reading, processing and writing data. Majority of the programs take data as input, and then after processing the processed data is being displayed which is called information. In C programming you can use&nbsp;<em>scanf()</em>&nbsp;and&nbsp;<em>printf()</em>&nbsp;predefined function to read and print data.</p>
+
+<div id="code1">
+
+<pre><code class="prettyprinted"><span class="include">#include</span><span class="str">&lt;stdio.h&gt;</span>
+
+<span class="kwd">void</span><span class="pln"> main</span><span class="pun">()</span>
+<span class="pun">{</span>
+<span class="kwd">int</span><span class="pln"> a</span><span class="pun">,</span><span class="pln">b</span><span class="pun">,</span><span class="pln">c</span><span class="pun">;</span><span class="pln">
+printf</span><span class="pun">(</span><span class="str">"Please enter any two numbers: \n"</span><span class="pun">);</span><span class="pln">
+scanf</span><span class="pun">(</span><span class="str">"%d %d"</span><span class="pun">,</span> <span class="pun">&amp;</span><span class="pln">a</span><span class="pun">,</span> <span class="pun">&amp;</span><span class="pln">b</span><span class="pun">);</span><span class="pln">
+c </span><span class="pun">=</span><span class="pln">  a </span><span class="pun">+</span><span class="pln"> b</span><span class="pun">;</span><span class="pln">
+printf</span><span class="pun">(</span><span class="str">"The addition of two number is: %d"</span><span class="pun">,</span><span class="pln"> c</span><span class="pun">);</span>
+<span class="pun">}</span></code></pre>
+
+</div>
+
+<div class="example">Output:</div>
+<pre>Please enter any two numbers:
+12
+3
+The addition of two number is:15</pre>
+<p>The above program&nbsp;<em>scanf()</em>&nbsp;is used to take input from the user, and respectively&nbsp;<em>printf()</em>is used to display output result on the screen.</p>
+<h2>Managing&nbsp;Input/Output</h2>
+<p>I/O operations are useful for a program to interact with users.&nbsp;<em>stdlib</em>&nbsp;is the standard C library for input-output operations. While dealing with input-output operations in C, two important streams play their role. These are:</p>
+<ol>
+    <li>Standard Input (stdin)</li>
+    <li>Standard Output (stdout)</li>
+</ol>
+<p><em>Standard input</em>&nbsp;or&nbsp;<em>stdin</em>&nbsp;is used for taking input from devices such as the keyboard as a data stream.&nbsp;<em>Standard output</em>&nbsp;or&nbsp;<em>stdout</em>&nbsp;is used for giving output to a device such as a monitor. For using I/O functionality, programmers must include&nbsp;<em>stdio&nbsp;header-file</em>&nbsp;within the program.</p>
+<p>The easiest and simplest of all I/O operations are taking a character as input by reading that character from standard input (keyboard).&nbsp;<em>getchar()</em>&nbsp;function&nbsp;can be used to read a single character. This function is alternate to&nbsp;<em>scanf()</em>&nbsp;function.</p>
+<div class="example">Syntax:</div>
+<pre>var_name = getchar();</pre>
+<div class="example">Example:</div>
+
+<div id="code2">
+<pre><code class="prettyprint prettyprinted"><span class="include">#include</span><span class="str">&lt;stdio.h&gt;</span>
+
+<span class="kwd">void</span><span class="pln"> main</span><span class="pun">()</span>
+<span class="pun">{</span>
+<span class="kwd">char</span><span class="pln"> title</span><span class="pun">;</span><span class="pln">
+title </span><span class="pun">=</span><span class="pln"> getchar</span><span class="pun">();</span>
+<span class="pun">}</span></code></pre>
+
+</div>
+
+<p>There is another function to do that task for files:&nbsp;<em>getc</em>&nbsp;which is used to accept a character from standard input.</p>
+<div class="example">Syntax:</div>
+<pre>int getc(FILE *stream);</pre>
+<h2>Writing Character In C</h2>
+<p>Similar to&nbsp;<em>getchar()</em>&nbsp;there is another function which is used to write characters, but one at a time.</p>
+<div class="example">Syntax:</div>
+<pre>putchar(var_name);</pre>
+<div class="example">Example:</div>
+
+<div id="code3">
+<pre>
+	<code class="prettyprint prettyprinted">
+	<span class="include">#include</span><span class="str">&lt;stdio.h&gt;</span>
+
+<span class="kwd">void</span><span class="pln"> main</span><span class="pun">()</span>
+<span class="pun">{</span>
+<span class="kwd">char</span><span class="pln"> result </span><span class="pun">=</span> <span class="str">'P'</span><span class="pun">;</span><span class="pln">
+putchar</span><span class="pun">(</span><span class="pln">result</span><span class="pun">);</span><span class="pln">
+putchar</span><span class="pun">(</span><span class="str">'\n'</span><span class="pun">);</span>
+<span class="pun">}</span></code></pre>
+
+</div>
+
+<p>Similarly, there is another function&nbsp;<em>putc</em>&nbsp;which is used for sending a single character to the standard output.</p>
+<div class="example">Syntax:</div>
+<pre>int putc(int c, FILE *stream);</pre>
+<h2>Formatted Input</h2>
+<p>It refers to an input data which has been arranged in a specific format. This is possible in C using&nbsp;<em>scanf()</em>. We have already encountered this and familiar with this function.</p>
+<div class="example">Syntax:</div>
+<pre>scanf("control string", arg1, arg2, ..., argn);</pre>
+<p>The field specification for reading integer inputted number is:</p>
+<pre>%w sd</pre>
+<p>Here the % sign denotes the conversion specification;&nbsp;<em>w</em>&nbsp;signifies the integer number that defines the field width of the number to be read.&nbsp;<em>d</em>&nbsp;defines the number to be read in integer format.</p>
+<div class="example">Example:</div>
+
+<div id="code4">
+<pre><code class="prettyprint prettyprinted"><span class="include">#include</span><span class="str">&lt;stdio.h&gt;</span>
+
+<span class="kwd">void</span><span class="pln"> main</span><span class="pun">()</span>
+<span class="pun">{</span>
+<span class="kwd">int</span><span class="pln"> var1</span><span class="pun">=</span> <span class="lit">60</span><span class="pun">;</span>
+<span class="kwd">int</span><span class="pln"> var1</span><span class="pun">=</span> <span class="lit">1234</span><span class="pun">;</span><span class="pln">
+scanf</span><span class="pun">(</span><span class="str">"%2d %5d"</span><span class="pun">,</span> <span class="pun">&amp;</span><span class="pln">var1</span><span class="pun">,</span> <span class="pun">&amp;</span><span class="pln">var2</span><span class="pun">);</span>
+<span class="pun">}</span></code></pre>
+</div>
+
+<p>Input data items should have to be separated by spaces, tabs or new-line and the punctuation marks are not counted as separators.</p>
+<h2>Reading&nbsp;and&nbsp;Writing Strings in C</h2>
+<p>There are two popular library functions&nbsp;<em>gets()</em>&nbsp;and&nbsp;<em>puts()</em>&nbsp;provides to deal with strings in C.</p>
+<p><strong>gets</strong>: The char *gets(char *str) reads a line from&nbsp;<em>stdin</em>&nbsp;and keeps the string pointed to by the&nbsp;<em>str</em>&nbsp;and is terminated when the new line is read or&nbsp;<em>EOF</em>&nbsp;is reached. The declaration of gets() function is:</p>
+<div class="example">Syntax:</div>
+<pre>char *gets(char *str);</pre>
+<p>Where str is a pointer to an array of characters where C strings are stored.</p>
+<p><strong>puts</strong>: The function - int puts(const char *str) is used to write a string to&nbsp;<em>stdout</em>, but it does not include null characters. A new line character needs to be appended to the output. The declaration is:</p>
+<div class="example">Syntax:</div>
+<pre>int puts(const char *str)</pre>
+<p>where str is the string to be written in C.</p>
+</body>
+</html>
+

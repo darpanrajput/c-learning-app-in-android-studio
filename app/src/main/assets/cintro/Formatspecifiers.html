@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Format specifiers</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style type="text/css">
+
+body{
+				background-color: #282923
+			}
+         p{
+
+         font-family: Arial, Helvetica, sans-serif;
+
+       }
+
+     p{
+     	color:#ffffff
+     }
+     h1{
+     	color:#ffffff
+     }
+     h2{
+     	color: #ffffff
+     }
+
+
+td{
+	color: #ffffff
+}
+th{
+	color: #ffffff
+}
+li{
+	color: #ffffff
+}
+
+caption{
+	color: #ffffff
+}
+h3{
+	display: inline;
+	color: #ffffff
+}
+h5{
+	display: inline;
+	color: #ffffff
+}
+
+
+.str{
+		color: #F92468
+	}
+
+	.conio{
+		color: #E7DB74
+	}
+	.comment{
+		color: #ffffff
+	}
+.pun{
+	color: #889F26
+}
+.pln{
+	color: #60D8EF
+}
+#code {
+	width: 50%;
+	height: auto;
+	background-color:#282923;
+	padding: 20px;
+	margin-left:10px;
+	border-radius: 10px;
+}
+		 table, th, td {
+            border: 1px solid white;
+            width:50%;
+
+         }
+         th, td {
+  padding: 10px;
+}
+
+.prettyprinted{
+	color:#000000;
+}
+.example{
+	margin-top: 20px;
+}
+	</style>
+</head>
+<body>
+<h1 style="text-align: center;"><span style="text-decoration: underline; color: #ff6600;"><strong>Format specifiers</strong></span></h1>
+<p>Format specifiers can be defined as the operators which are used in association with printf() function for printing the data that is referred by any object or any variable. When a value is stored in a particular variable, then you cannot print the value stored in the variable straightforwardly without using the format specifiers. You can retrieve the data that are stored in the variables and can print them onto the console screen by implementing these format specifiers in a printf() function.</p>
+<p>Format specifiers start with a percentage&nbsp;<strong><em>%</em></strong>&nbsp;operator and followed by a special character for identifying the type of data.</p>
+<p>There are mostly&nbsp;<em>six types of format specifiers</em>&nbsp;that are available in C.</p>
+<h3>List of format specifiers in C</h3>
+<table class="table">
+    <tbody>
+    <tr>
+        <th>Format Specifier</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>%d</td>
+        <td>Integer Format Specifier</td>
+    </tr>
+    <tr>
+        <td>%f</td>
+        <td>Float Format Specifier</td>
+    </tr>
+    <tr>
+        <td>%c</td>
+        <td>Character Format Specifier</td>
+    </tr>
+    <tr>
+        <td>%s</td>
+        <td>String Format Specifier</td>
+    </tr>
+    <tr>
+        <td>%u</td>
+        <td>Unsigned Integer Format Specifier</td>
+    </tr>
+    <tr>
+        <td>%ld</td>
+        <td>Long Int Format Specifier</td>
+    </tr>
+    </tbody>
+</table>
+<h3>&nbsp;Integer Format Specifier %d</h3>
+<p>The&nbsp;<em>%d</em>&nbsp;format specifier is implemented for representing integer values. This is used with printf() function for printing the integer value stored in the variable.</p>
+<div class="example"><fh5><h5>Syntax:</h5>:</fh5></div>
+<pre><code class="prettyprint prettyprinted"><span class="pln">printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,&lt;</span><span class="pln">variable name</span><span class="pun">&gt;);</span></code></pre>
+<h3>Float Format Specifier %f</h3>
+<p>The&nbsp;<em>%f</em>&nbsp;format specifier is implemented for representing fractional values. This is implemented within printf() function for printing the fractional or floating value stored in the variable. Whenever you need to print any fractional or floating data, you have to use&nbsp;<em>%f</em>&nbsp;format specifier.</p>
+<div class="example"><h5>Syntax:</h5>:</div>
+<pre><code class="prettyprint prettyprinted"><span class="pln">printf</span><span class="pun">(</span><span class="str">"%f"</span><span class="pun">,</span> <span class="pun">&lt;</span><span class="pln">variable name</span><span class="pun">&gt;);<br /><br /></span></code></pre>
+<p>The&nbsp;<em>%c</em>&nbsp;format specifier is implemented for representing characters. This is used with printf() function for printing the character stored in a variable. When you want to print a character data, you should incorporate the&nbsp;<em>%c</em>&nbsp;format specifier.</p>
+<pre><code class="prettyprint prettyprinted"></code></pre>
+<div class="example"><h5>Syntax:</h5>:</div>
+<pre><code class="prettyprint prettyprinted"></code></pre>
+<pre><code class="prettyprint prettyprinted"><span class="pln">printf</span><span class="pun">(</span><span class="str">"%c"</span><span class="pun">,&lt;</span><span class="pln">variable name</span><span class="pun">&gt;);</span></code></pre>
+<pre><code class="prettyprint prettyprinted"></code></pre>
+<h3>String Format Specifier %s</h3>
+<pre><code class="prettyprint prettyprinted"></code></pre>
+<p>The&nbsp;<em>%s</em>&nbsp;format specifier is implemented for representing strings. This is used in printf() function for printing a string stored in the character array variable. When you have to print a string, you should implement the&nbsp;<em>%s</em>&nbsp;format specifier.</p>
+<pre><code class="prettyprint prettyprinted"></code></pre>
+<div class="example"><h5>Syntax:</h5>:</div>
+<pre><code class="prettyprint prettyprinted"></code></pre>
+<pre><code class="prettyprint prettyprinted"><span class="pln">printf</span><span class="pun">(</span><span class="str">"%s"</span><span class="pun">,&lt;</span><span class="pln">variable name</span><span class="pun">&gt;);</span></code></pre>
+<pre><code class="prettyprint prettyprinted"></code></pre>
+<h3 style="margin-top: 10px;">Unsigned Integer Format Specifier %u</h3>
+<pre><code class="prettyprint prettyprinted"></code></pre>
+<p>The&nbsp;<em>%u</em>&nbsp;format specifier is implemented for fetching values from the address of a variable having unsigned decimal integer stored in the memory. This is used within printf() function for printing the unsigned integer variable.</p>
+<pre><code class="prettyprint prettyprinted"></code></pre>
+<div class="example"><h5>Syntax:</h5>:</div>
+<pre><code class="prettyprint prettyprinted"></code></pre>
+<pre><code class="prettyprint prettyprinted"><span class="pln">printf</span><span class="pun">(</span><span class="str">"%u"</span><span class="pun">,&lt;</span><span class="pln">variable name</span><span class="pun">&gt;);</span></code></pre>
+<pre><code class="prettyprint prettyprinted"></code></pre>
+<h3>Long Int Format Specifier %ld</h3>
+<pre><code class="prettyprint prettyprinted"></code></pre>
+<p>The&nbsp;<em>%ld</em>&nbsp;format specifier is implemented for representing long integer values. This is implemented with printf() function for printing the long integer value stored in the variable.</p>
+<pre><code class="prettyprint prettyprinted"></code></pre>
+<div class="example"><h5>Syntax:</h5>:</div>
+<pre><code class="prettyprint prettyprinted"></code></pre>
+<pre><code class="prettyprint prettyprinted"><span class="pln">printf</span><span class="pun">(</span><span class="str">"%ld"</span><span class="pun">,&lt;</span><span class="pln">variable name</span><span class="pun">&gt;);</span></code></pre>
+<pre><code class="prettyprint prettyprinted"><span class="pun">&nbsp;</span></code></pre>
+</body>
+</html>
+
+
